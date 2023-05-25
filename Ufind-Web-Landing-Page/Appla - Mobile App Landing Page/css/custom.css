@@ -201,7 +201,7 @@ a:focus{
 }
 
 .header .navbar-light .navbar-nav .nav-item ul li a:hover{
-	background: rgba(255,255,255,0.2);
+	background: rgba(7, 43, 97, 0.92);
 	color: #fff;
 }
 
@@ -224,12 +224,12 @@ a:focus{
 }
 
 .header .navbar-light .navbar-nav .nav-link:hover{
-	background: rgba(255,255,255,0.1);
+	background: rgba(7, 43, 97, 0.92);
 	color: #fff;
 }
 
 .header .navbar-light .navbar-nav .nav-link:focus{
-	background: rgba(255,255,255,0.1);
+	background: rgba(7, 43, 97, 0.92);
 	color: #fff;
 }
 
@@ -333,7 +333,7 @@ a:focus{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(167,125,194,0.92);
+	background:rgba(7, 43, 97, 0.92);
 }
 
 .banner .row{
@@ -370,7 +370,7 @@ a:focus{
 	display: inline-block;
 	background: #fff;
 	font-size: 18px;
-	color: #a77dc2;
+	color: #002855;
 	font-weight: 500;
 	padding: 10px 22px;
 	border-radius: 4px;
@@ -418,7 +418,7 @@ a:focus{
 .service-single .icon-box{
 	font-size: 80px;
 	line-height: 1em;
-	color: #a77dc2;
+	color: #002855;
 }
 
 .service-single h3{
@@ -465,7 +465,7 @@ a:focus{
 }
 
 .service-single:hover .service-overlay{
-	background: rgba(167,125,194,1);
+	background: #0466C8;
 }
 
 .service-single:hover .service-overlay-inner{
@@ -496,8 +496,8 @@ a:focus{
 	width: 60px;
 	height: 60px;
 	font-size: 32px;
-	color: #a77dc2;
-	border: 1px solid #a77dc2;
+	color: #001845;
+	border: 1px solid #001845;
 	text-align: center;
 	border-radius: 50%;
 	line-height: 60px;
@@ -522,7 +522,7 @@ a:focus{
 }
 
 .feature-single:hover .icon-box{
-	background: #a77dc2;
+	background: #001845;
 	color: #fff;
 }
 
@@ -533,7 +533,7 @@ a:focus{
 
 .btn-download{
 	display: inline-block;
-	background: #a77dc2;
+	background: #001845;
 	color: #fff;
 	padding: 12px 30px;
 	border-radius: 4px;
@@ -541,7 +541,7 @@ a:focus{
 }
 
 .btn-download:hover{
-	background: #333;
+	background: #33415C;
 	color: #fff;
 }
 
@@ -564,7 +564,7 @@ a:focus{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(167,125,194,0.90);
+	background: #002855
 }
 
 .video-box a{
@@ -576,7 +576,7 @@ a:focus{
 	font-size: 24px;
 	border-radius: 50%;
 	line-height: 60px;
-	color: #a77dc2;
+	color: #002855;
 	padding-left: 6px;
 	box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.6);
 	margin-bottom: 30px;
@@ -616,7 +616,7 @@ a:focus{
 	display: inline-block;
 	width: 36px;
 	height: 36px;
-	background: #a77dc2;
+	background: #002855;
 	color: #fff;
 	line-height: 36px;
 	border-radius: 50%;
@@ -758,7 +758,7 @@ a:focus{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(167,125,194,0.90);
+	background: rgba(7, 43, 97, 0.92);
 }
 
 .download-app-content h2{
@@ -791,7 +791,7 @@ a:focus{
 	padding: 14px 40px;
 	border-radius: 4px;
 	font-size: 18px;
-	color: #a77dc2;
+	color: #002855;
 }
 
 /***************************************/
@@ -855,9 +855,9 @@ a:focus{
 
 .pricing-footer a{
 	display: inline-block;
-	border: 2px solid #a77dc2;
+	border: 2px solid #002855;
 	padding: 8px 40px;
-	color: #a77dc2;
+	color: #002855;
 	font-weight: 600;
 	font-size: 18px;
 	border-radius: 6px;
@@ -905,15 +905,15 @@ a:focus{
 .btn-readmore{
 	display: inline-block;
 	font-size: 14px;
-	border: 2px solid #a77dc2;
+	border: 2px solid #002855;
 	padding: 4px 20px;
-	color: #a77dc2;
+	color: #002855;
 	font-weight: 600;
 	transition: all 0.3s;
 }
 
 .btn-readmore:hover{
-	background: #a77dc2;
+	background: #002855;
 	color: #fff;
 }
 
@@ -935,7 +935,7 @@ a:focus{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(167,125,194,0.92);
+	background: rgba(7, 43, 97, 0.92);
 }
 
 .contactus .section-title h2,
@@ -958,7 +958,7 @@ a:focus{
 .btn-contact{
 	background: #fff;
 	border: none;
-	color: #a77dc2;
+	color: #002855;
 	font-weight: 600;
 	padding: 10px 40px;
 	border-radius: 6px;
@@ -968,7 +968,7 @@ a:focus{
 }
 
 .btn-contact:hover{
-	background: #a77dc2;
+	background: #002855;
 	color: #fff;
 }
 
