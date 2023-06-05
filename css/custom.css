@@ -147,10 +147,10 @@ a:focus{
 /*****   Navigation area css    *****/
 /************************************/
 .header .navbar{
-	background: #fff;
+	background: #eeeeee;
 	z-index: 500;
 	padding: 0;
-	border-bottom: 1px solid rgba(255,255,255,0.2);
+	/* border-bottom: 1px solid rgba(255,255,255,0.2); */
 	transition: all 0.3s;
 	border-radius: 0 0 25px 25px;
 }
@@ -167,7 +167,8 @@ a:focus{
 }
 
 .header .navbar-brand img{
-	height: 39px;
+	width: 150px;
+	height: auto;
 	transition: all 0.3s;
 }
 
@@ -452,7 +453,7 @@ a:focus{
 	right: 0;
 	left: 0;
 	bottom: 0;
-	background: rgba(255,255,255,0.5);
+	background: rgba(255,255,255,0.1);
 	border-radius: 8px;
 	transition: all 0.4s;
 }
@@ -495,7 +496,7 @@ a:focus{
 /************************************/
 
 .features{
-	background: #f8f2fc;
+	background: #ffffff;
 	padding: 80px 0 0;
 }
 .features h2, .features p{
@@ -515,8 +516,8 @@ a:focus{
 	width: 60px;
 	height: 60px;
 	font-size: 32px;
-	color: #001845;
-	border: 1px solid #001845;
+	color: #002855;
+	border: 1px solid #002855;
 	text-align: center;
 	border-radius: 50%;
 	line-height: 60px;
@@ -541,7 +542,7 @@ a:focus{
 }
 
 .feature-single:hover .icon-box{
-	background: #001845;
+	background: #002855;
 	color: #fff;
 }
 
@@ -552,7 +553,7 @@ a:focus{
 
 .btn-download{
 	display: inline-block;
-	background: #001845;
+	background: #002855;
 	color: #fff;
 	padding: 12px 30px;
 	border-radius: 4px;
@@ -613,6 +614,7 @@ a:focus{
 /************************************/
 
 .screenshot{
+	background: #002855;
 	padding: 80px 0;
 }
 
@@ -635,8 +637,8 @@ a:focus{
 	display: inline-block;
 	width: 36px;
 	height: 36px;
-	background: #002855;
-	color: #fff;
+	background: rgba(255,255,255,0.1);
+	color: #ffffff;
 	line-height: 36px;
 	border-radius: 50%;
 	margin: 0 5px;
@@ -646,27 +648,37 @@ a:focus{
 
 .screenshot-pagination .screenshot-slide-prev:hover,
 .screenshot-pagination .screenshot-slide-next:hover{
-	background: #333;	
+	background: #ffffff;	
+	color: #002855
 }
 
 /************************************/
 /*****    Our Team area css     *****/
 /************************************/
-
+.our-team .section-title h2, .our-team .section-title p{
+	color: #002855;
+}
 .our-team{
-	background: #f8f2fc;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: #ffffff;
 	padding: 80px 0;
 }
 
 .team-single{
-	border: 10px solid #fff;
+	border: 1px solid #002855;
+	border-radius: 10px;
 }
 
 .team-single figure{
+	display: none;
 	margin: 0;
 }
 
 .team-info{
+	border-radius: 10px;
 	background: #fff;
 	text-align: center;
 	padding: 20px 10px 10px;
@@ -1134,13 +1146,30 @@ a:focus{
 
 
 @media only screen and (max-width: 575px){
-	
+	/* .header .navbar {
+		/* height: 5vh; 
+		border-radius: 0;
+	} */
+	.header .navbar-brand img {
+		width: 100px;
+	}
 	.header .container{
 		width: 100%;
 		padding-left: 15px !important;
 		padding-right: 15px !important;
 	}
-	
+	.service-single .icon-box {
+		line-height: initial;
+	}
+	.service-overlay {
+		margin: 10px 0 10px 0;
+	}
+	.services .service-single {
+		padding: 0;
+	}
+	.services .service-single h3 {
+		display: none;
+	}
 	.banner .btn-header a{
 		margin-bottom: 10px;
 	}
