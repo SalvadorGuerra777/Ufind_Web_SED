@@ -18,9 +18,23 @@
 	/* Sticky header */
 	$window.scroll(function(){
     	if ($window.scrollTop() > 100) {
-			$('.navbar').addClass('sticky-header');
+			// $('.navbar').addClass('sticky-header');
+			// $('.navbar-brand').removeClass('d-none');
+			// $('.header .navbar-light .navbar-nav .nav-link').css('color', '#002855');
+			// $('.header .navbar-light .navbar-nav .nav-link').hover(
+			// 	function() {
+			// 		this.css('background', '#333')
+			// 	},
+			// 	function () {
+			// 		this.css('background', 'none')
+			// 	}
+			// );
+			// $('.header .navbar-light .navbar-nav .nav-link').addClass('.link-color');
+			// console.log($('.header .navbar-light .navbar-nav .nav-link'))
 		} else {
-			$('.navbar').removeClass('sticky-header');
+			// $('.header .navbar-light .navbar-nav .nav-link').css('color', '#fff');
+			// $('.navbar').removeClass('sticky-header');
+			// $('.navbar-brand').addClass('d-none');
 		}
 	});
 		
