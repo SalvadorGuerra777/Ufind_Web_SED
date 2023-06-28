@@ -16,6 +16,9 @@ body{
 body.on-side{
 	margin-left: 0;
 }
+p {
+	text-align: justify;
+}
 
 h1,
 h2,
