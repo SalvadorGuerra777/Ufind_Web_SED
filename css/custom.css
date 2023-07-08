@@ -7,7 +7,27 @@
 /************************************/
 /***** 	   General css		 ****/
 /************************************/
-
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+	/* Estilos para la sección de capturas de pantalla */
+	.screenshot-slider .swiper-slide {
+	  width: 100% !important;
+	}
+	
+	/* Estilos para la paginación de capturas de pantalla */
+	.screenshot-pagination {
+	  text-align: center;
+	  margin-top: 20px;
+	}
+	
+	/* Estilos para la sección de nuestro equipo */
+	.our-team .col-lg-3 {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	  margin-bottom: 30px;
+	}
+  }
+  
 body{
 	font-size: 16px;
 	font-family: 'Source Sans Pro', sans-serif;
