@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regístrate - Ufind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#publicaciones">Publicaciones</a></li>
+                <li><a href="login.html">Login</a></li> <!-- Enlace a la página de inicio de sesión -->
+                <li><a href="registrate.html">Regístrate</a></li> <!-- Enlace a la página de registro (seleccionada) -->
+            </ul>
+            <img src="/images/logo500x500_transparente.png" alt="Logo Ufind">
+        </nav>
+    </header>
+
+    <!-- Contenido de la página de registro -->
+    <section id="registro">
+        <h2>Regístrate</h2>
+        <form action="procesar_registro.php" method="POST"> <!-- Cambia "procesar_registro.php" por la URL de tu script de registro -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            <br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <br>
+            <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+            <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+            <br>
+            <a href="login.html">¿Ya tienes cuenta? Inicia sesión aquí</a>
+            <br>
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+</html>

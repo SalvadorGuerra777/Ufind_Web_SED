@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Ufind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#publicaciones">Publicaciones</a></li>
+                <li><a href="login.html">Login</a></li> <!-- Enlace a la página de inicio de sesión (seleccionada) -->
+                <li><a href="registrate.html">Regístrate</a></li> <!-- Enlace a la página de registro -->
+            </ul>
+            <img src="/images/logo500x500_transparente.png" alt="Logo Ufind">
+        </nav>
+    </header>
+
+    <!-- Contenido de la página de inicio de sesión -->
+    <section id="login">
+        <h2>Iniciar Sesión</h2>
+        <form action="procesar_login.php" method="POST"> <!-- Cambia "procesar_login.php" por la URL de tu script de inicio de sesión -->
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <br>
+            <a href="#olvidaste-contrasena">¿Olvidaste tu contraseña?</a>
+            <br>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </section>
+
+    <section id="olvidaste-contrasena">
+        <p>¿Olvidaste tu contraseña? Restablece tu contraseña <a href="#aqui">aquí</a>.</p>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+</html>
