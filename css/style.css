@@ -1,0 +1,89 @@
+
+/* Importa Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Personaliza tus estilos aquí */
+/* Por ejemplo: */
+/* h1 {
+    color: blue;
+} */
+
+    body{
+        background-color: #fff ;
+    }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #112c4c; 
+    color: #112c4c; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+nav img {
+    max-width: 100px; 
+}
+/* Estilos para la tarjeta */
+.card {
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la imagen */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para el contenido de la tarjeta */
+.card-content {
+    padding: 16px;
+}
+
+/* Estilos para el título */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Estilos para la descripción */
+.card-description {
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+/* Estilos para la ubicación */
+.card-location {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 8px 0;
+}
