@@ -35,10 +35,44 @@
             </div>
         </div>
 
-        <!-- Botón de agregar publicación -->
-        <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105">Agregar</button>
+       <!-- Botón de agregar publicación -->
+       <button id="openModal" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105">Agregar</button>
+
+       <!-- Modal de agregar publicación -->
+       <div id="myModal" class="modal hidden fixed inset-0 z-50 overflow-auto bg-gray-800 bg-opacity-50 flex justify-center items-center">
+           <div class="modal-content bg-white p-4 max-w-md rounded shadow-lg">
+               <h3 class="text-2xl font-bold mb-4">Agregar Publicación</h3>
+               <form id="postForm">
+                   <div class="mb-4">
+                       <label class="block text-gray-700 text-sm font-bold mb-2" for="titulo">Título:</label>
+                       <input class="border border-gray-300 rounded w-full py-2 px-3" type="text" id="titulo" name="titulo" required>
+                   </div>
+                   <div class="mb-4">
+                       <label class="block text-gray-700 text-sm font-bold mb-2" for="foto">Foto:</label>
+                       <input class="border border-gray-300 rounded w-full py-2 px-3" type="file" id="foto" name="foto" accept="image/*" required>
+                   </div>
+                   <div class="mb-4">
+                       <label class="block text-gray-700 text-sm font-bold mb-2" for="descripcion">Descripción:</label>
+                       <textarea class="border border-gray-300 rounded w-full py-2 px-3" id="descripcion" name="descripcion" rows="4" required></textarea>
+                   </div>
+                   <div class="mb-4">
+                       <label class="block text-gray-700 text-sm font-bold mb-2" for="ubicacion">Ubicación:</label>
+                       <input class="border border-gray-300 rounded w-full py-2 px-3" type="text" id="ubicacion" name="ubicacion" required>
+                   </div>
+                   <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105">Guardar</button>
+               </form>
+               <button id="closeModal" class="mt-4 text-sm text-gray-600 hover:text-gray-800">Cerrar</button>
+           </div>
+       </div>
+
+       <!-- Contenedor de publicaciones -->
+       <div id="postContainer">
+           <!-- Aquí se mostrarán los posts -->
+       </div>
+   </section>
+
     </section>
 
-    <script src="/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
