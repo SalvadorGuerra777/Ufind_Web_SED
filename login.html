@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión - Ufind</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- Vincula la hoja de estilo de Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="publicaciones.html">Publicaciones</a></li>
-                <li><a href="login.html">Login</a></li> <!-- Enlace a la página de inicio de sesión (seleccionada) -->
-                <li><a href="registrate.html">Regístrate</a></li> <!-- Enlace a la página de registro -->
+<body class="bg-gray-100">
+
+    <header class="bg-white p-4">
+        <nav class="flex justify-between items-center">
+            <img src="/images/logo500x500_transparente.png" alt="Logo Ufind" class="w-32">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="text-blue-500 hover:underline">Inicio</a></li>
+                <li><a href="publicaciones.html" class="text-blue-500 hover:underline">Publicaciones</a></li>
+                <li><a href="login.html" class="text-blue-500 hover:underline font-bold">Login</a></li>
+                <li><a href="registrate.html" class="text-blue-500 hover:underline">Regístrate</a></li>
             </ul>
-            <img src="/images/logo500x500_transparente.png" alt="Logo Ufind">
         </nav>
     </header>
 
     <!-- Contenido de la página de inicio de sesión -->
-    <section id="login">
-        <h2>Iniciar Sesión</h2>
-        <form action="procesar_login.php" method="POST"> <!-- Cambia "procesar_login.php" por la URL de tu script de inicio de sesión -->
-            <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario" required>
-            <br>
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-            <br>
-            <a href="#olvidaste-contrasena">¿Olvidaste tu contraseña?</a>
-            <br>
-            <button type="submit">Iniciar Sesión</button>
+    <section id="login" class="container mx-auto mt-8 p-4 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Iniciar Sesión</h2>
+        <form action="procesar_login.php" method="POST" class="space-y-4">
+            <div class="flex flex-col">
+                <label for="usuario" class="text-sm">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required class="border border-gray-300 rounded-md p-2">
+            </div>
+            <div class="flex flex-col">
+                <label for="contrasena" class="text-sm">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required class="border border-gray-300 rounded-md p-2">
+            </div>
+            <a href="#olvidaste-contrasena" class="text-blue-500 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
+            <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out">Iniciar Sesión</button>
         </form>
     </section>
 
-    <section id="olvidaste-contrasena">
-        <p>¿Olvidaste tu contraseña? Restablece tu contraseña <a href="#aqui">aquí</a>.</p>
+    <section id="olvidaste-contrasena" class="container mx-auto mt-4">
+        <p class="text-sm">¿Olvidaste tu contraseña? Restablece tu contraseña <a href="#aqui" class="text-blue-500 hover:underline">aquí</a>.</p>
     </section>
 
     <script src="/script.js"></script>

@@ -4,29 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ufind</title>
-    <link rel="stylesheet" href="/css/style.css">
-    
-
+    <!-- Vincula la hoja de estilo de Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="publicaciones.html">Publicaciones</a></li>
-                <li><a href="login.html">Login</a></li> <!-- Enlace a la página de inicio de sesión -->
-                <li><a href="registrate.html">Regístrate</a></li> <!-- Enlace a la página de registro -->
+<body class="bg-gray-100">
+
+    <header class="bg-white p-4">
+        <nav class="flex justify-between items-center">
+            <img src="/images/logo500x500_transparente.png" alt="Logo Ufind" class="w-32">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="text-blue-500 hover:underline">Inicio</a></li>
+                <li><a href="publicaciones.html" class="text-blue-500 hover:underline">Publicaciones</a></li>
+                <li><a href="login.html" class="text-blue-500 hover:underline">Login</a></li>
+                <li><a href="registrate.html" class="text-blue-500 hover:underline">Regístrate</a></li>
             </ul>
-            <img src="/images/logo500x500_transparente.png" alt="Logo Ufind">
         </nav>
     </header>
 
     <!-- Contenido de la página principal -->
-    <section id="inicio">
-        <h1>Bienvenido a Ufind</h1>
+    <section id="inicio" class="container mx-auto mt-8 p-4">
+        <h1 class="text-3xl font-bold">Bienvenido a Ufind</h1>
     </section>
-
- 
 
     <script src="/script.js"></script>
 </body>
